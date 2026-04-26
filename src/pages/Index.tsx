@@ -433,20 +433,14 @@ export default function Index() {
                 {
                   icon: "Phone",
                   label: "Телефон",
-                  value: "+7 (495) 000-00-00",
-                  sub: "Пн–Пт, 9:00–18:00",
+                  value: "+7 995 393 43 01",
+                  sub: "+7 917 209 49 50",
                 },
                 {
                   icon: "Mail",
                   label: "Электронная почта",
-                  value: "info@auditpro.ru",
+                  value: "buhonlain23@mail.ru",
                   sub: "Ответим в течение 2 часов",
-                },
-                {
-                  icon: "MapPin",
-                  label: "Адрес",
-                  value: "Москва, ул. Примерная, д. 1",
-                  sub: "Приём по предварительной записи",
                 },
               ].map((c) => (
                 <div key={c.label} className="flex items-start gap-5">
