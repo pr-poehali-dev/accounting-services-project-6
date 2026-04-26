@@ -103,6 +103,7 @@ const oneTimeServices = [
   { icon: "Landmark", title: "Взаимодействие с контролирующими органами" },
   { icon: "UserCheck", title: "Функция главного бухгалтера" },
   { icon: "Search", title: "Аудит Вашей компании" },
+  { icon: "FileCheck", title: "Составление и подача Декларации 3-НДФЛ" },
 ];
 
 const stats = [
