@@ -84,6 +84,27 @@ const packages = [
   },
 ];
 
+const oneTimeServices = [
+  { icon: "Building2", title: "Регистрация ООО, ИП" },
+  { icon: "XCircle", title: "Сопровождение процедур ликвидации" },
+  { icon: "HelpCircle", title: "Консультация по выбору систем налогообложения" },
+  { icon: "CreditCard", title: "Регистрация ККТ" },
+  { icon: "FilePen", title: "Внесение изменений в ЕГРЮЛ, ЕГРИП" },
+  { icon: "ReceiptText", title: "Налоговые вычеты, возврат НДФЛ" },
+  { icon: "RefreshCw", title: "Восстановление бухгалтерского учёта" },
+  { icon: "BookMarked", title: "Постановка бухгалтерского, налогового, кадрового учёта" },
+  { icon: "Sword", title: "Воинский учёт" },
+  { icon: "Target", title: "Налоговое планирование" },
+  { icon: "ScrollText", title: "Формирование учётной политики" },
+  { icon: "FileSignature", title: "Разработка Устава" },
+  { icon: "Banknote", title: "Расчёт заработной платы, дивидендов" },
+  { icon: "MessageCircle", title: "Консультация бухгалтера" },
+  { icon: "ClipboardList", title: "Составление бухгалтерской и налоговой отчётности" },
+  { icon: "Landmark", title: "Взаимодействие с контролирующими органами" },
+  { icon: "UserCheck", title: "Функция главного бухгалтера" },
+  { icon: "Search", title: "Аудит Вашей компании" },
+];
+
 const stats = [
   { value: "15+", label: "лет на рынке" },
   { value: "320+", label: "клиентов" },
@@ -293,6 +314,45 @@ export default function Index() {
           <p className="font-body text-xs text-muted-foreground mt-6 text-center font-light">
             Цены указаны ориентировочно. Точная стоимость определяется после анализа вашей ситуации.
           </p>
+        </div>
+      </section>
+
+      {/* ── ONE-TIME SERVICES ──────────────────────────────── */}
+      <section className="py-24 bg-background">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="mb-16">
+            <p className="font-body text-gold text-xs tracking-[0.3em] uppercase mb-4">Отдельные задачи</p>
+            <h2 className="font-display text-5xl font-light">Разовые услуги</h2>
+            <div className="w-16 h-px bg-gold mt-6" />
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-border">
+            {oneTimeServices.map((s) => (
+              <div
+                key={s.title}
+                className="bg-background p-6 flex items-center justify-between group hover:bg-navy-mid transition-colors duration-300"
+              >
+                <div className="flex items-center gap-4">
+                  <div className="w-8 h-8 border border-gold/30 flex items-center justify-center flex-shrink-0 group-hover:border-gold transition-colors">
+                    <Icon name={s.icon} size={14} className="text-gold" fallback="FileText" />
+                  </div>
+                  <span className="font-body text-sm font-light leading-snug">{s.title}</span>
+                </div>
+                <div className="ml-4 flex-shrink-0 text-right">
+                  <span className="font-body text-xs text-gold/70 tracking-wide whitespace-nowrap">по запросу</span>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-8 flex justify-center">
+            <button
+              onClick={() => scrollTo("contacts")}
+              className="border border-gold/40 text-gold font-body text-sm font-light px-10 py-4 hover:border-gold hover:bg-gold/5 transition-all tracking-widest uppercase"
+            >
+              Узнать стоимость
+            </button>
+          </div>
         </div>
       </section>
 
