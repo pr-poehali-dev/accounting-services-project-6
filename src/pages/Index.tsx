@@ -128,9 +128,9 @@ export default function Index() {
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="w-8 h-8 bg-gold flex items-center justify-center">
-              <span className="font-display font-bold text-[hsl(222,28%,7%)] text-sm">А</span>
+              <span className="font-display font-bold text-[hsl(222,28%,7%)] text-sm">И</span>
             </div>
-            <span className="font-display text-xl font-semibold tracking-wide">АудитПро</span>
+            <span className="font-display text-xl font-semibold tracking-wide">ИР-Консалт</span>
           </div>
 
           <nav className="hidden md:flex items-center gap-8">
@@ -409,7 +409,7 @@ export default function Index() {
                   </div>
                   <div>
                     <div className="font-body text-sm font-medium">Главный бухгалтер</div>
-                    <div className="font-body text-xs text-muted-foreground">АудитПро</div>
+                    <div className="font-body text-xs text-muted-foreground">ИР-Консалт</div>
                   </div>
                 </div>
               </div>
@@ -512,12 +512,12 @@ export default function Index() {
         <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3">
             <div className="w-6 h-6 bg-gold flex items-center justify-center">
-              <span className="font-display font-bold text-[hsl(222,28%,7%)] text-xs">А</span>
+              <span className="font-display font-bold text-[hsl(222,28%,7%)] text-xs">И</span>
             </div>
-            <span className="font-display text-base font-medium">АудитПро</span>
+            <span className="font-display text-base font-medium">ИР-Консалт</span>
           </div>
           <p className="font-body text-xs text-muted-foreground font-light">
-            © 2024 АудитПро. Профессиональные бухгалтерские услуги.
+            © 2024 ИР-Консалт. Профессиональные бухгалтерские услуги.
           </p>
           <div className="flex gap-6">
             {[
